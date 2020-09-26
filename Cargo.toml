@@ -1,0 +1,17 @@
+[package]
+name = "pakr-mio-signalfd"
+version = "1.0.0"
+authors = ["Pawel Kraszewski <pawel@kraszewscy.net>"]
+description = "Adapter of Linux' signalfd to be used with mio 0.7"
+edition = "2018"
+license = "BSD-2-Clause"
+keywords = ["linux", "signalfd", "mio"]
+categories = ["api-bindings", "os::linux-apis"]
+repository = "https://github.com/p-kraszewski/pakr-mio-signalfd"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "^0.2"
+mio = { version = "^0.7", features = ["os-poll", "os-util"] }
+pakr-signals = "^1.0"
